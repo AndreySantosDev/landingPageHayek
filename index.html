@@ -4,14 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hayek Global College</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #002147;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form input, form button {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #002147;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Hayek Global College</h1>
+        <h1>Hayek Global College</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>Faculdade internacional com modelo de ensino americano.</p>
-    </main>
+    
+    <section id="hero">
+        <h2>A Primeira Faculdade Internacional de Brasília</h2>
+        <p>Graduação com currículo americano e transferência para universidades nos EUA.</p>
+    </section>
+    
+    <section id="sobre">
+        <h2>Sobre a Hayek Global College</h2>
+        <p>A Hayek Global College oferece um modelo acadêmico inovador, permitindo que os alunos iniciem sua graduação no Brasil e concluam seus estudos em universidades americanas parceiras.</p>
+    </section>
+    
+    <section id="parceiros">
+        <h2>Universidades Parceiras</h2>
+        <p>Os alunos podem transferir seus créditos para:</p>
+        <ul>
+            <li>Fort Hays State University</li>
+            <li>Alfred State University</li>
+            <li>Kentucky State University</li>
+            <li>Cumberland University</li>
+        </ul>
+    </section>
+    
+    <section id="equipe">
+        <h2>Nosso Time</h2>
+        <div class="team-member">
+            <img src="team1.jpg" alt="Nome do membro 1">
+            <p>Nome do membro 1 - Cargo</p>
+        </div>
+        <div class="team-member">
+            <img src="team2.jpg" alt="Nome do membro 2">
+            <p>Nome do membro 2 - Cargo</p>
+        </div>
+        <div class="team-member">
+            <img src="team3.jpg" alt="Nome do membro 3">
+            <p>Nome do membro 3 - Cargo</p>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>Inscreva-se para Saber Mais</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hayek Global College. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
