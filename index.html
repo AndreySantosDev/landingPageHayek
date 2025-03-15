@@ -44,6 +44,9 @@
             color: white;
             text-align: center;
             padding: 80px 20px;
+            background: linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), 
+                        url('https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742078302/Hayek__77_xffwrb.jpg') 
+                        no-repeat center center/cover;
         }
 
         section {
@@ -56,6 +59,9 @@
             height: 150px;
             border-radius: 50%;
             margin: 10px;
+            display: inline-block;
+            margin: 15px;
+            
         }
 
         form {
@@ -84,6 +90,20 @@
             text-align: center;
             padding: 10px 0;
         }
+
+        .partners-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .university-item {
+            text-align: center;
+        }
+
+
     </style>
 </head>
 <body>
@@ -106,18 +126,58 @@
     
     <section id="sobre">
         <h2>Sobre a Hayek Global College</h2>
-        <p>A Hayek Global College oferece um modelo acadêmico inovador, permitindo que os alunos iniciem sua graduação no Brasil e concluam seus estudos em universidades americanas parceiras.</p>
+        <p>Hayek Global College, accredited by the Ministry of Education in Brazil, is located in a modern corporate complex in the heart of Brasília. <br>
+            Committed to delivering a truly global education, Hayek combines active learning methodologies with cutting-edge technology to create a rich, <br>
+            culturally diverse environment where students and professors from around the world come together.<br>
+            <br>
+            Since 2021, Hayek has offered a Global MBA program designed to equip professionals for success in an interconnected world. Led by a faculty <br>
+            with extensive international expertise, this program blends practical learning with a global perspective connecting students from over 23 <br>
+            countries in 5 different continents in synchronous virtual classrooms. <br>
+            <br>
+            For its achievements in the Global MBA program, in June 2024 Hayek was ranked 8th in the world in the World Univeristy Rankings for Innovation<br>
+            (WURI), in the category Student Mobility and Openness. <br>
+            <br>
+            In August of 2024, Hayek launched its 2+2 undergraduate program, enabling students to start their studies in Brazil and complete them at a <br>
+            leading U.S. institution such as Cumberland University, Fort Hays State University, SUNY Alfred State University, or Kentucky State University. <br>
+            The faculty includes seasoned professionals and academics from five continents, bringing a wealth of global insights that prepare students to <br>
+            lead and innovate. Through Collaborative Online International Learning (COIL) projects, students also engage with peers from around the world, <br>
+            developing essential skills to thrive in a globalized workforce.</p>
     </section>
     
     <section id="parceiros">
         <h2>Universidades Parceiras</h2>
-        <p>Os alunos podem transferir seus créditos para:</p>
-        <ul>
-            <li>Fort Hays State University</li>
-            <li>Alfred State University</li>
-            <li>Kentucky State University</li>
-            <li>Cumberland University</li>
-        </ul>
+        <div class="partners-grid">
+            <div class="university-item">
+                <img src="https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742079718/3_fj96og.png" 
+                     alt="Fort Hays State University" class="university-logo">
+                <!-- <p>Fort Hays State University</p> -->
+            </div>
+            <div class="university-item">
+                <img src="https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742079705/1_exdu9k.png" 
+                     alt="Alfred State University" class="university-logo">
+                <!-- <p>Alfred State University</p> -->
+            </div>
+            <div class="university-item">
+                <img src="https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742079725/4_yulge9.png" 
+                     alt="Kentucky State University" class="university-logo">
+                <!-- <p>Kentucky State University</p> -->
+            </div>
+            <div class="university-item">
+                <img src="https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742079717/2_s7tzf6.png" 
+                     alt="Cumberland University" class="university-logo">
+                <!-- <p>Cumberland University</p> --> 
+            </div>
+            <div class="university-item">
+                <img src="https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742079964/7_pwsf1k.png" 
+                     alt="California Miramar" class="university-logo">
+                <!-- <p>California Miramar</p> --> 
+            </div>
+            <div class="university-item">
+                <img src="https://res.cloudinary.com/dmwv2i0oj/image/upload/v1742079965/6_gfz3aa.png" 
+                     alt="Clark Univesity" class="university-logo">
+                <!-- <p>Clark</p> --> 
+            </div>
+        </div>
     </section>
     
     <section id="equipe">
